@@ -60,20 +60,71 @@ if ($_SESSION['letras_acertadas'] == $_SESSION['palabra']) {
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f3f6fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
+
+        h1 {
+            color: #1a73e8;
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+
+        form {
+            margin: 2rem auto;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: fit-content;
+        }
+
         input[type="text"] {
-            width: 20px;
+            width: 25px;
+            height: 25px;
+            font-size: 1.2rem;
             text-align: center;
+            margin-right: 0.5rem;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            outline: none;
         }
-        h1{
-            color: black;
-            font-size: large;
+
+        input[type="text"]:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 4px #1a73e8;
         }
-        form{
-            margin: 2rem 1rem;
-            border: 1px solid grey;
-            padding: 1rem;
+
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 0.4rem 1rem;
             border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #155bb5;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
